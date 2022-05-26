@@ -11,7 +11,7 @@ Custom Config Here.
 :cfg: URL: str, You should set it to your own website-url, with no '/' at the end.
                 e.g URL = 'http://aryun.ustcori.com:2333'
 """
-URL = 'http://aryun.ustcori.com:9452'
+URL = 'http://aryun.ustcori.com:9112'
 
 UPLOAD_API = "/ServiceAPI/UpdateRecord"
 CONTENT_API = "/ReportStudent/SLabStatisticPage/GetLabdateContent"
@@ -222,6 +222,7 @@ if __name__ == '__main__':
         r = Experiment('Username', 371, '干涉法测微小量.15', 114514, 'FileName')
         c = Experiment.encrypt(f.read())
         r.upload(c)
+        """
     # Encrypt
     with open('Content.xml', 'w') as f:
         content = b'content_here'
@@ -240,3 +241,5 @@ if __name__ == '__main__':
         # Method 2
         r = Experiment('Username', 359, '示波器实验.15', 114514, 'FileName')
         f.write(r.gen_content(cookie))
+"""
+        
